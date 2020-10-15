@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
-import Home from './pages/Home';
-import Main from './pages/Main';
+import Main from './Main';
+
+// import './App.css';
+// import Home from './pages/Home';
 
 const App = () => <>
-  <Home />
   <Main />
 </>
 

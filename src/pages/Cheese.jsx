@@ -2,7 +2,7 @@ import React from 'react';
 
 const Cheese = () => <>
 
-    <h1>Cheese</h1>
+    <h1>Cheese!</h1>
 
 </>
 

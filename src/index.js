@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+export { default as Navi } from './components/Navi'
 
 ReactDOM.render(
   <React.StrictMode>

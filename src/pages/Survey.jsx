@@ -2,7 +2,7 @@ import React from 'react';
 
 const Survey = () => <>
 
-    <h1>Survey</h1>
+    <h1>Survey!</h1>
 
 </>
 
