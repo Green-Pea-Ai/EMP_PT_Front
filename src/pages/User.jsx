@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
+import {UserMenu as Menu} from '../components'
 
-const User = () => <>
-
-    <h1>User!</h1>
-
-</>
-
-export default User;
+const User = ({children}) => (<>
+    <h1>User</h1>
+    <Menu/>
+    {children}
+</>)
+export default User
