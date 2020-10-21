@@ -3,7 +3,7 @@ import { Cheese } from '../../templates'
 
 const CheeseDelete = () => {
     return (<Cheese>
-        <h1>CheeseDelete</h1>
+        <h1>Cheese Delete</h1>
     </Cheese>)
 }
 

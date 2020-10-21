@@ -3,7 +3,7 @@ import { User } from '../../templates'
 
 const UserSignUp = () => {
     return(<User>
-        <h1>UserSignUp</h1>
+        <h1>User SignUp</h1>
     </User>)
 }
 

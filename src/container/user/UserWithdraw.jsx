@@ -3,7 +3,7 @@ import { User } from '../../templates'
 
 const UserWithdraw = () => {
     return(<User>
-        <h1>UserWithdraw</h1>
+        <h1>User Withdraw</h1>
     </User>)
 }
 

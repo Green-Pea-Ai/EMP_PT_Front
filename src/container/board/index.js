@@ -1,0 +1,5 @@
+export { default as Board_Create } from './BoardWrite'
+export { default as Board_List } from './BoardList'
+export { default as Board_Read } from './BoardRead'
+export { default as Board_Modi} from './BoardModify'
+export { default as Board_Del} from './BoardDelete'

@@ -23,17 +23,20 @@ export const CheeseMenu = () => (<nav>
 
 export const BoardMenu = () => (<nav>
     <ol>
-        <li><Link to='/write_board'>글 쓰기</Link></li>
+        <li><Link to='/write_board'>글 등록</Link></li>
         <li><Link to='/list_board'>작성글 리스트</Link></li>
-        <li><Link to='/edit_board'>작성글 수정</Link></li>
+        <li><Link to='/read_board'>글 읽기</Link></li>
+        <li><Link to='/edit_board'>글 수정</Link></li>
         <li><Link to='/delete_board'>글 삭제</Link></li>
+
     </ol>
 </nav>)
 
 export const SurveyMenu = () => (<nav>
     <ol>
-        <li><Link to='write_survey'>설문 작성</Link></li>
-        <li><Link to='list_survey'>작성했던 설문 조회</Link></li>
+        <li><Link to='/write_survey'>설문 작성</Link></li>
+        <li><Link to='/list_survey'>작성했던 설문 리스트</Link></li>
+        <li><Link to='/read_survey'>작성했던 설문 읽기</Link></li>
     </ol>
 
 </nav>)
