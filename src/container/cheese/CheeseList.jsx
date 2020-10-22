@@ -1,7 +1,6 @@
-import React from 'react'
-import { useState, useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import React, { useState, useEffect } from 'react'
 import { Cheese } from '../../templates'
+import { useSelector, useDispatch } from 'react-redux'
 import { debounce } from 'throttle-debounce'
 import axios from 'axios'
 
@@ -43,10 +42,11 @@ const CheeseList = () => {
         if(!results.data) fetch()
         else
         if(results.data.length > 0) changeTitle()
+        if(cheese.country !== undefined) changeTitle()
     })
     let fetch = () => dispatch(itemSearch())
     let fetched = () => setLoading(false)
-    let changeTitle = () => document.title = `치즈 검색 결과: ${cheese.cheese}`
+    let changeTitle = () => document.title = `치즈 검색 결과: ${ cheese.cheese }`
 
     let searchCheeses = debounce(500, input => {
         let data = results.data
@@ -60,16 +60,16 @@ const CheeseList = () => {
             case 1:
                 setCheeses(data.filter(
                     e => e.cheese.charAt(0).toLowerCase() === input.toLowerCase() 
-                    || e.country.toLowerCase().includes(input.toLowerCase())
-                    || e.category.toLowerCase().includes(input.toLowerCase())
+                        || e.country.toLowerCase().includes(input.toLowerCase())
+                        || e.kind.toLowerCase().includes(input.toLowerCase())
                 ))
                 setResult(true)
                 break
             default:
                 setCheeses(data.filter(
                     e => e.cheese.toLowerCase().includes(input.toLowerCase())
-                    || e.country.toLowerCase().includes(input.toLowerCase())
-                    || e.category.toLowerCase().includes(input.toLowerCase())
+                        || e.country.toLowerCase().includes(input.toLowerCase())
+                        || e.kind.toLowerCase().includes(input.toLowerCase())
                 ))
                 setResult(true)
                 break
